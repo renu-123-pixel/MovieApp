@@ -1,0 +1,57 @@
+plugins {
+    id("com.android.application") version "8.3.2"
+}
+
+
+android {
+    namespace ="com.examplefourthjuly.movieapp"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId "com.examplefourthjuly.movieapp"
+        minSdk(21)
+        targetSdk(34)
+        versionCode(1)
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+            exclude 'META-INF/gradle/incremental.annotation.processors'
+        }
+    }
+}
+
+dependencies {
+    implementation libs.constraintlayout
+    implementation libs.volley
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation libs.glide
+    implementation(libs.gson.v2101)
+    implementation libs.material.v190
+    implementation libs.javax.annotation.api
+    implementation libs.recyclerview.v132
+    implementation libs.coordinatorlayout
+
+
+}
+
+
+
+

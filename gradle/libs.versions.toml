@@ -1,0 +1,51 @@
+[versions]
+agp = "8.5.2"
+coordinatorlayout = "1.3.0"
+databindingCommon = "8.5.2"
+databindingCommonVersion = "8.9.0"
+glide = "4.12.0"
+googleMaterial = "1.11.0"
+gson = "2.8.9"
+gsonVersion = "2.10.1"
+guava = "23.0"
+javaxAnnotationApi = "1.3.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+material = "1.12.0"
+materialVersion = "1.9.0"
+recyclerviewVersion = "1.4.0"
+volley = "1.2.1"
+filamentAndroid = "1.17.1"
+compiler = "3.2.0-alpha11"
+appcompatV7 = "28.0.0"
+annotationJvm = "1.9.1"
+
+[libraries]
+coordinatorlayout = { module = "androidx.coordinatorlayout:coordinatorlayout", version.ref = "coordinatorlayout" }
+databinding-common = { module = "androidx.databinding:databinding-common", version.ref = "databindingCommon" }
+databinding-common-v890 = { module = "androidx.databinding:databinding-common", version.ref = "databindingCommonVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+gson-v2101 = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+javax-annotation-api = { module = "javax.annotation:javax.annotation-api", version.ref = "javaxAnnotationApi" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+recyclerview-v132 = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerviewVersion" }
+volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+filament-android = { group = "com.google.ar.sceneform", name = "filament-android", version.ref = "filamentAndroid" }
+compiler = { group = "androidx.databinding", name = "compiler", version.ref = "compiler" }
+annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version.ref = "annotationJvm" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
