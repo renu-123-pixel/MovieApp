@@ -1,77 +1,80 @@
-# 🎬 Movie App
+🎬 Movie App (TVMaze API)
 
-An Android application that lets users browse and explore a list of popular movies using a clean, modern UI. The app fetches real-time movie data from the [TMDb API](https://www.themoviedb.org/documentation/api), including titles, ratings, overviews, and posters.
+An Android application that allows users to browse and explore popular TV shows using a clean and modern user interface. The app fetches real-time show data from the TVMaze API, including titles, ratings, summaries, and posters.
 
-## 📱 Features
+📱 Features
 
-- 🔍 Browse popular movies from TMDb
-- 🖼️ View posters, titles, and ratings
-- 📄 Read brief movie overviews
-- 🎨 Modern, responsive layout using RecyclerView
-- 🌐 API integration with Retrofit2
+🔍 Browse popular TV shows
 
-## 🛠️ Built With
+🖼️ Display show posters, names, and ratings
 
-- **Language:** Java
-- **API:** [TMDb API](https://developers.themoviedb.org/)
-- **Libraries/Frameworks:**
-  - [Retrofit2](https://square.github.io/retrofit/) – for network requests
-  - [Glide](https://github.com/bumptech/glide) – for image loading
-  - RecyclerView – for listing movies
-  - CardView – for movie cards
-  - ConstraintLayout – for flexible UI design
+📄 Read detailed show summaries
 
-## 📷 Screenshots
+❤️ Mark favorite shows
 
-| Login Screen |
-|--------------|
-| <img src="doc/login_screen.png" width="300" /> |
+🎨 Modern UI using RecyclerView and CardView
 
-| Splash Screen |
-|---------------|
-| <img src="doc/splash_screen.png" width="300"/> |
+🌐 REST API integration using Retrofit2
 
-| Movies List |
-|--------------|
-| <img src="doc/movies_list_screen_1.png" width="300"/> |
+🛠️ Built With
 
-| Movie Detail 1 |
-|----------------|
-| <img src="doc/movie_detail_screen_1.png" width="300"/> |
+Language: Java
 
-| Movie Detail 2 |
-|----------------|
-| <img src="doc/movie_detail_screen_2.png" width="300"/> |
+API: TVMaze API
 
-| Favorite Movies |
-|------------------|
-| <img src="doc/favorite_movies.png" width="300"/> |
+Libraries & Tools:
 
-## 📷 UML Sequence Diagram 
-| <img src="doc/Movie-app_UML_Sequence_diagram.png" width="800" /> |
+Retrofit2 – API communication
 
-## 📷  Component Diagram
-| <img src="doc/Movie-app_High_Level_Architecture_Diagram.png" width="800" /> |
+Glide – Image loading
 
-## 🚀 Getting Started
+RecyclerView – Displaying show lists
 
-### Prerequisites
+CardView – UI cards
 
-- Android Studio (Electric Eel or newer)
-- TMDb API Key (Free – [Sign Up Here](https://www.themoviedb.org/signup))
+ConstraintLayout – Responsive UI design
 
-### Installation
-```bash
+📷 Screenshots
+Login Screen
+<img src="doc/login_screen.png" width="300"/>
+Splash Screen
+<img src="doc/splash_screen.png" width="300"/>
+Shows List
+<img src="doc/movies_list_screen_1.png" width="300"/>
+Show Detail
+<img src="doc/movie_detail_screen_1.png" width="300"/>
+Favorites
+<img src="doc/favorite_movies.png" width="300"/>
+📊 UML & Architecture
+UML Sequence Diagram
+<img src="doc/Movie-app_UML_Sequence_diagram.png" width="800"/>
+High-Level Component Diagram
+<img src="doc/Movie-app_High_Level_Architecture_Diagram.png" width="800"/>
+🚀 Getting Started
+Prerequisites
+
+Android Studio (Electric Eel or newer)
+
+Internet connection
+
+No API key required (TVMaze API is public 🎉)
+
+🔧 Installation
 git clone https://github.com/renu-123-pixel/Movie-app.git
-Open in Android Studio and let Gradle sync.
 
-In your gradle.properties or as a constant in ApiClient.java, add your TMDb API key:
 
-java
-Copy
-Edit
-public static final String API_KEY = "YOUR_API_KEY_HERE";
-Run the app on an emulator or physical Android device.
+Open the project in Android Studio
+
+Let Gradle sync
+
+Run the app on an emulator or physical device
+
+🌐 API Reference (TVMaze)
+
+Example endpoints used in the app:
+
+https://api.tvmaze.com/shows
+https://api.tvmaze.com/search/shows?q=batman
 
 📁 Project Structure
 MovieApp/
@@ -79,48 +82,33 @@ MovieApp/
     └── src/
         └── main/
             ├── java/
-            │   └── com/yourpackage/movieapp/  ← actual package name may vary
+            │   └── com/yourpackage/movieapp/
             │       ├── Activity/
-            │       │   ├── DetailActivity.java
-            │       │   ├── LoginActivity.java   ← launcher activity
-            │       │   ├── IntroActivity2.java
-            │       │   └── MainActivity.java
             │       ├── Adapter/
-            │       │   └── [RecyclerView adapters, etc.]
             │       ├── Domain/
-            │       │   └── [Model classes e.g., Movie.java]
             │       └── Helper/
-            │           └── [Utility/helper classes]
             │
             ├── res/
-            │   ├── drawable/
-            │   ├── drawable-xxhdpi/
             │   ├── layout/
-            │   │   └── [activity_main.xml, item_movie.xml, etc.]
-            │   ├── mipmap-hdpi/
-            │   ├── mipmap-mdpi/
+            │   ├── drawable/
             │   ├── values/
-            │   ├── values-night/
             │   └── xml/
-            │       ├── backup_rules.xml
-            │       └── data_extraction_rules.xml
             │
             └── AndroidManifest.xml
 
-📌 Future Improvements
- Add movie detail screen
+📌 Future Enhancements
 
- Add search functionality
+🔍 Search functionality
 
- Support for genres and filters
+🎭 Genre-based filtering
 
- Pagination for long movie lists
+📄 Pagination for large lists
+
+💾 Offline caching
+
+🌙 Dark mode support
 
 🙋‍♀️ Author
-Renu – GitHub Profile
 
-🤝 Contributing
-Contributions are welcome! Feel free to open issues or submit a pull request.
-
-
-
+Renu
+GitHub: renu-123-pixel
