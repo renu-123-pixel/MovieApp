@@ -1,82 +1,87 @@
-🎬 Movie App (TVMaze API)
+# 🎬 Movie App (TVMaze API)
 
-An Android application that allows users to browse and explore popular TV shows using a clean and modern user interface. The app fetches real-time show data from the TVMaze API, including titles, ratings, summaries, and posters.
+An Android application that allows users to browse and explore popular TV shows using a clean and modern UI. The app fetches real-time show data from the **TVMaze API**, including titles, ratings, summaries, and posters.
 
-📱 Features
+---
 
-🔍 Browse popular TV shows
+## 📱 Features
 
-🖼️ Display show posters, names, and ratings
+- 🔍 Browse popular TV shows
+- 🖼️ View posters, show names, and ratings
+- 📄 Read detailed show summaries
+- ❤️ Add shows to favorites
+- 🎨 Modern UI using RecyclerView and CardView
+- 🌐 REST API integration using Retrofit2
 
-📄 Read detailed show summaries
+---
 
-❤️ Mark favorite shows
+## 🛠️ Built With
 
-🎨 Modern UI using RecyclerView and CardView
+- **Language:** Java  
+- **API:** [TVMaze API](https://www.tvmaze.com/api)  
+- **Libraries & Tools:**
+  - Retrofit2 – Network requests
+  - Glide – Image loading
+  - RecyclerView – Displaying lists
+  - CardView – UI cards
+  - ConstraintLayout – Responsive UI
 
-🌐 REST API integration using Retrofit2
+---
 
-🛠️ Built With
+## 📷 Screenshots
 
-Language: Java
-
-API: TVMaze API
-
-Libraries & Tools:
-
-Retrofit2 – API communication
-
-Glide – Image loading
-
-RecyclerView – Displaying show lists
-
-CardView – UI cards
-
-ConstraintLayout – Responsive UI design
-
-📷 Screenshots
-Login Screen
+### Login Screen
 <img src="doc/login_screen.png" width="300"/>
-Splash Screen
+
+### Splash Screen
 <img src="doc/splash_screen.png" width="300"/>
-Shows List
+
+### Shows List
 <img src="doc/movies_list_screen_1.png" width="300"/>
-Show Detail
+
+### Show Details
 <img src="doc/movie_detail_screen_1.png" width="300"/>
-Favorites
+
+### Favorites
 <img src="doc/favorite_movies.png" width="300"/>
-📊 UML & Architecture
-UML Sequence Diagram
+
+---
+
+## 📊 UML & Architecture
+
+### UML Sequence Diagram
 <img src="doc/Movie-app_UML_Sequence_diagram.png" width="800"/>
-High-Level Component Diagram
+
+### High-Level Component Diagram
 <img src="doc/Movie-app_High_Level_Architecture_Diagram.png" width="800"/>
-🚀 Getting Started
-Prerequisites
 
-Android Studio (Electric Eel or newer)
+---
 
-Internet connection
+## 🚀 Getting Started
 
-No API key required (TVMaze API is public 🎉)
+### Prerequisites
 
-🔧 Installation
+- Android Studio (Electric Eel or newer)
+- Internet connection  
+- No API key required (TVMaze API is public)
+
+---
+
+## 🔧 Installation
+
+```
 git clone https://github.com/renu-123-pixel/Movie-app.git
 
+```
+## 🌐 API Reference
 
-Open the project in Android Studio
+Example endpoints used in the project:
 
-Let Gradle sync
-
-Run the app on an emulator or physical device
-
-🌐 API Reference (TVMaze)
-
-Example endpoints used in the app:
-
-https://api.tvmaze.com/shows
+https://api.tvmaze.com/shows <br>
 https://api.tvmaze.com/search/shows?q=batman
+```
 
-📁 Project Structure
+## 📁 Project Structure
 MovieApp/
 └── app/
     └── src/
@@ -96,7 +101,8 @@ MovieApp/
             │
             └── AndroidManifest.xml
 
-📌 Future Enhancements
+
+## 📌 Future Improvements
 
 🔍 Search functionality
 
@@ -108,7 +114,7 @@ MovieApp/
 
 🌙 Dark mode support
 
-🙋‍♀️ Author
-
+```
+## 🙋‍♀️ Author
 Renu
-GitHub: renu-123-pixel
+GitHub: https://github.com/renu-123-pixel
